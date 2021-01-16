@@ -63,7 +63,9 @@ ui<-navbarPage(theme = shinytheme("flatly"),
                         plotlyOutput("storage")),
                tabPanel("Gas Supply Hub",
                         downloadButton("downloadData6", " Export"),
-                        dataTableOutput("GSH"))
+                        dataTableOutput("GSH")),
+               tabPanel("Data Collection",
+                        htmlOutput("text"))
 )
 
 server<-function(input,output){
@@ -151,8 +153,8 @@ server<-function(input,output){
                 text = ~paste('A$',round(price_value,2),sep='')) %>% 
       layout(title = 'Victoria DWGM daily 6am price',
              xaxis = list(type='date',title = "",tickformat = "%d %B<br>(%a)"),
-             yaxis = list(side = 'right', title = 'Demand', showgrid = T, zeroline = T, range=c(min(dwgm$total_gas_used,na.rm = T)-100,max(dwgm$total_gas_used,na.rm = T)+50)),
-             yaxis2 = list(side = 'left', overlaying = "y", title = 'Price', showgrid = F, zeroline = T,range=c(min(dwgm$price_value,na.rm = T)-1,max(dwgm$price_value,na.rm = T)+0.2)),
+             yaxis = list(side = 'left', title = 'Demand', showgrid = T, zeroline = T, range=c(min(dwgm$total_gas_used,na.rm = T)-100,max(dwgm$total_gas_used,na.rm = T)+50)),
+             yaxis2 = list(side = 'right', overlaying = "y", title = 'Price', showgrid = F, zeroline = T,range=c(min(dwgm$price_value,na.rm = T)-1,max(dwgm$price_value,na.rm = T)+0.2)),
              legend = list(x = 100, y = 1.2)) %>% 
       config(displayModeBar = F)
   })
@@ -166,6 +168,7 @@ server<-function(input,output){
     datatable(gsh,
               style = "bootstrap")
   })
+  output$text<-renderText("All information on this dashboard is publicly available courtesy of the <a href='https://aemo.com.au/en'>Australian Energy Market Operator (AEMO)</b></a>.<br><br><b>The data is updated twice daily at 0845 and 2045 UTC.</b></a><br><br>Visit the <a href=https://www.linkedin.com/in/jonahfoong/> dashboard creator</a><br>Link to <a href='https://github.com/jonfoong/covid_mobility_shiny'> Github repo</a><br>Link to <a href='https://hub.docker.com/repository/docker/jonfoong/aus_shiny'> Dockerhub repo</a>")
 }
 shinyApp(ui, server)
 
