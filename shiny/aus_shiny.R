@@ -6,7 +6,7 @@ library(DT)
 library(googledrive)
 
 temp<-tempfile(fileext = '.json')
-download.file('https://www.dropbox.com/s/twobcoxscpv77h6/rcloud-298921-bdc6e1c25160.json?dl=1',temp)
+download.file('INSERT DROPBOX LINK TO GOOGLE DRIVE SERVICE ACCOUNT KEY',temp)
 drive_auth(path=temp)
 
 d<-list()
