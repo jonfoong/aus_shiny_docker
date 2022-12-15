@@ -1,0 +1,13 @@
+name: ausmobile
+title: ausmobile
+username:
+account: discount-fireworks
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3750695
+bundleId: 4313322
+url: https://jonfoong.shinyapps.io/ausmobile/
+when: 1615147102.30073
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: test.R

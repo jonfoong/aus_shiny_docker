@@ -1,0 +1,12 @@
+name: shinymobile
+title: shinymobile
+username:
+account: discount-fireworks
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3744388
+bundleId: 4306869
+url: https://jonfoong.shinyapps.io/shinymobile/
+when: 1614982675.38434
+asMultiple: FALSE
+asStatic: FALSE
