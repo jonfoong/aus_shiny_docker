@@ -1,0 +1,13 @@
+name: aus_shiny
+title:
+username:
+account: discount-fireworks
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7891144
+bundleId: 6705936
+url: https://jonfoong.shinyapps.io/aus_shiny/
+when: 1673046277.8808
+lastSyncTime: 1673046277.8808
+asMultiple: FALSE
+asStatic: FALSE
