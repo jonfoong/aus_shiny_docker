@@ -5,9 +5,9 @@ account: jonfoong
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 7891144
-bundleId: 6636037
+bundleId: 7483532
 url: https://jonfoong.shinyapps.io/aus_shiny/
-when: 1671023431.83632
-lastSyncTime: 1671023431.83633
+when: 1689962610.35899
+lastSyncTime: 1689962610.359
 asMultiple: FALSE
 asStatic: FALSE

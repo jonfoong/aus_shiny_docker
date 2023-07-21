@@ -35,10 +35,13 @@ for (i in 1:nrow(all_ids)){
   
 }
 
+message("success")
 storage$Date <- storage$Date %>% as.Date()
 pipeline$Date <- pipeline$Date %>% as.Date()
 longford$Date <-longford$Date %>% as.Date()
 lng$Date <-lng$Date %>% as.Date()
+
+message("beforegsh")
 gsh[,4] <- gsh[,4] %>% as.Date()
 gsh[,5] <- gsh[,5] %>% as.Date()
 dwgm$gas_date <- dwgm$gas_date %>% as.Date()
@@ -182,6 +185,6 @@ server<-function(input,output){
     datatable(gsh,
               style = "bootstrap")
   })
-  output$text<-renderText("All information on this dashboard is publicly available courtesy of the <a href='https://aemo.com.au/en'>Australian Energy Market Operator (AEMO)</b></a>.<br><br><b>The data is updated twice daily at 0845 and 2045 UTC.</b></a><br><br>Visit the <a href=https://www.linkedin.com/in/jonahfoong/> dashboard creator</a><br>Link to <a href='https://github.com/jonfoong/aus_shiny_docker'> Github repo</a><br>Link to <a href='https://hub.docker.com/repository/docker/jonfoong/aus_shiny'> Dockerhub repo</a>")
+  output$text <- renderText("All information on this dashboard is publicly available courtesy of the <a href='https://aemo.com.au/en' target='_blank'>Australian Energy Market Operator (AEMO)</b></a>.<br><br><b>The data is updated twice daily at 0845 and 2045 UTC.</b></a><br><br>Visit the <a href='https://www.linkedin.com/in/jonahfoong/' target='_blank'> dashboard creator</a><br>Link to <a href='https://github.com/jonfoong/aus_shiny_docker' target='_blank'> Github repo</a><br>Link to <a href='https://hub.docker.com/repository/docker/jonfoong/aus_shiny' target='_blank'> Dockerhub repo</a>")
 }
 shinyApp(ui, server)
