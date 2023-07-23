@@ -129,6 +129,13 @@ write.csv(longford,'output/longford.csv')
 write.csv(dwgm,'output/dwgm.csv')
 write.csv(gsh,'output/gsh.csv')
 
+list_df <- list(storage, pipeline, lng, longford, dwgm, gsh)
+temp <- tempfile(fileext = '.rds')
+
+saveRDS(list_df, temp)
+
+drive_upload(temp, name = "list_df.rds", overwrite = TRUE)
+
 print('Updating drive')
 drive_update('dwgm','output/dwgm.csv')
 drive_update('gsh','output/gsh.csv')

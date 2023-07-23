@@ -2,3 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
+
+/aus_shiny/gcloud_token.json
+
+list_df.rds
