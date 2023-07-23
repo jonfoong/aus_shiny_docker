@@ -1,5 +1,3 @@
 install.packages('httr')
-install.packages('tidyverse')
 install.packages('rvest')
 install.packages('googledrive')
-install.packages('pushoverr')

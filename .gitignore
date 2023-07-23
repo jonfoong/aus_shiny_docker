@@ -3,6 +3,7 @@
 .RData
 .Ruserdata
 
-/aus_shiny/gcloud_token.json
+/aus_shiny/token.json
+/token/
 
 list_df.rds

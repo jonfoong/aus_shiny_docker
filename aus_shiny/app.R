@@ -6,7 +6,7 @@ library(DT)
 
 # authenticate gdrive
 
-drive_auth(path = "gloud_token.json")
+drive_auth(path = "token.json")
 
 # get id of rds file and download
 
