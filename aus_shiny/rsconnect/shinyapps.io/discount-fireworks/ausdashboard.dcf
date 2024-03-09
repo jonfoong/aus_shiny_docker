@@ -1,13 +1,12 @@
 name: ausdashboard
 title:
-username:
+username: discount-fireworks
 account: discount-fireworks
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 2537309
-bundleId: 7487686
+bundleId: 8352708
 url: https://jonfoong.shinyapps.io/ausdashboard/
-when: 1690115733.0675
-lastSyncTime: 1690115733.0676
+version: 1
 asMultiple: FALSE
 asStatic: FALSE

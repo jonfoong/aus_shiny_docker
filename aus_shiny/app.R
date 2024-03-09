@@ -223,7 +223,7 @@ server <- function(input, output){
   
   # Data Collection tab
   
-  output$about <- renderText("All information on this dashboard is publicly available courtesy of the <a href='https://aemo.com.au/en' target='_blank'>Australian Energy Market Operator (AEMO)</b></a>.<br><br><b>The data is updated twice daily at 0845 and 2045 UTC.</b></a><br><br>Visit the <a href='https://www.linkedin.com/in/jonahfoong/' target='_blank'> dashboard creator</a><br>Link to <a href='https://github.com/jonfoong/aus_shiny_docker' target='_blank'> Github repo</a><br>Link to <a href='https://hub.docker.com/r/jonfoong/aus_shiny' target='_blank'> Dockerhub repo</a>")
+  output$about <- renderText("All information on this dashboard is publicly available courtesy of the <a href='https://aemo.com.au/en' target='_blank'>Australian Energy Market Operator (AEMO)</b></a>.<br><br><b>The data is updated twice daily at 0845 and 2045 UTC + 10.</b></a><br><br>Visit the <a href='https://jonfoong.github.io/' target='_blank'> dashboard creator</a><br>Link to <a href='https://github.com/jonfoong/aus_shiny_docker' target='_blank'> Github repo</a><br>Link to <a href='https://hub.docker.com/r/jonfoong/aus_shiny' target='_blank'> Dockerhub repo</a>")
 }
 
 shinyApp(ui, server)
