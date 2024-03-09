@@ -3,7 +3,4 @@
 .RData
 .Ruserdata
 
-/aus_shiny/token.json
-/token/
-
-list_df.rds
+/aus_shiny/gdrive_token.json

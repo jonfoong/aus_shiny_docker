@@ -13,7 +13,7 @@ print('Authenticating drive')
 
 #download.file('https://www.dropbox.com/s/twobcoxscpv77h6/rcloud-298921-bdc6e1c25160.json?dl=1',temp)
 
-drive_auth(path = "token/token.json")
+drive_auth(path = "token/gdrive_token.json")
 
 # scrape data from JSON
 
